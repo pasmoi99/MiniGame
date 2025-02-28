@@ -15,6 +15,7 @@ public class UI : MonoBehaviour
 
     public void UpdateScore(int score)
     {
-        _score.text = score.ToString();
+        MainGame.MainScript.Score += score;
+        _score.text = MainGame.MainScript.Score.ToString();
     }
 }
