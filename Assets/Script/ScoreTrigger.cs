@@ -3,18 +3,23 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class Pit : MonoBehaviour
+public class ScoreTrigger : MonoBehaviour
 {
     public int Points;
-    private TextMeshPro m_TextMeshPro;
-    private Collider Trigger;
+    private TextMeshPro _pointsText;
+    private Collider _trigger;
 
 
     void Awake()
     {
-        Trigger = GetComponent<Collider>();
+        _pointsText = GetComponentInChildren<TextMeshPro>();
+        _trigger = GetComponent<Collider>();
     }
 
+    private void Start()
+    {
+        _pointsText.text = Points.ToString();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
