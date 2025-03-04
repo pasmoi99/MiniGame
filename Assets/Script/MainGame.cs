@@ -8,6 +8,8 @@ public class MainGame : MonoBehaviour
     public UI UI;
     public GameObject Ball;
     public int Score;
+
+    public List<GameObject> BallsList;
     // Start is called before the first frame update
     void Awake()
     {
