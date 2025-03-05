@@ -13,7 +13,7 @@ public class UI : MonoBehaviour
         _score.text = "0";
     }
 
-    public void UpdateScore(int score)
+    public void AddScore(int score)
     {
         MainGame.MainScript.Score += score;
         _score.text = MainGame.MainScript.Score.ToString();

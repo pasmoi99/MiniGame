@@ -29,6 +29,6 @@ public class ScoreTrigger : MonoBehaviour
 
         //    
         //}
-        MainGame.MainScript.UI.UpdateScore(Points);
+        MainGame.MainScript.UI.AddScore(Points);
     }
 }
